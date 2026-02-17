@@ -1,8 +1,11 @@
+// ALTERAÇÃO: Ajustado o tamanho do banner para ficar menor no celular usando altura menor no mobile (50vh e min-h-[350px]) 
+// e mantendo o tamanho original apenas no desktop com md:h-[70vh] e md:min-h-[500px].
+
 import heroBanner from "@/assets/kkkkk.png";
 
 const HeroBanner = () => {
   return (
-    <section id="inicio" className="relative w-full h-[70vh] min-h-[500px] overflow-hidden">
+    <section id="inicio" className="relative w-full h-[45vh] min-h-[280px] md:h-[70vh] md:min-h-[500px] overflow-hidden">
       <img src={heroBanner} alt="Banner da loja de bebidas" className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-background/30" />
       <div className="absolute inset-0 flex items-center">
